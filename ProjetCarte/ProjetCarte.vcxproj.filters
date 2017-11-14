@@ -27,5 +27,18 @@
     <ClInclude Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Joueur.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\ProjetCarte.rc">
+      <Filter>Fichiers de ressources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -115,6 +115,13 @@
     <ClInclude Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Creatures.h" />
     <ClInclude Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Energie.h" />
     <ClInclude Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Joueur.h" />
+    <ClInclude Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\ProjetCarte.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
