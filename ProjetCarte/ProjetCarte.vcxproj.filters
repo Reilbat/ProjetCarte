@@ -40,5 +40,17 @@
     <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Creatures.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Cartes.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Joueur.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Energie.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

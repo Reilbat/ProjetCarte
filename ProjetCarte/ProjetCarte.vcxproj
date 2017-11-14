@@ -121,6 +121,10 @@
     <ResourceCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\ProjetCarte.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Cartes.cpp" />
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Creatures.cpp" />
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Energie.cpp" />
+    <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Joueur.cpp" />
     <ClCompile Include="..\..\..\..\..\Macbook d%27Alex\Documents\ProjetCarte\ProjetCarte\ProjetCarte\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

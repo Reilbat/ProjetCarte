@@ -1,3 +1,5 @@
+#include "Joueur.h"
+
 int main()
 {
 	Joueur lucas("lucas", 6000);
