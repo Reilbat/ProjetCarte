@@ -1,12 +1,16 @@
 #include <iostream>
 #include "Joueur.h"
+#include "Cartes.h"
+#include <vector>
+#include <stack>
+#include <string>
 
 using namespace std;
 
 //CLASSE JOUEUR
 
 //CONSTRUCTEUR SURCHARGEE
-Joueur::Joueur(string _nom, int _solde) : m_nom(_nom), m_vie(200), m_solde(_solde)
+Joueur::Joueur(string _nom, int _solde) : m_nom_Joueur(_nom), m_hp_Joueur(200), m_solde(_solde)
 {
 }
 
@@ -29,6 +33,6 @@ void Joueur::affichage_coll()
 {
 	for (int i = 0; i<collection.size(); i++)
 	{
-		collection[&i].affichage();
+		collection[i].affichage();
 	}
 }

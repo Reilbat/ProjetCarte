@@ -1,4 +1,8 @@
 #include "Joueur.h"
+#include "Cartes.h"
+#include "Creatures.h"
+#include "Energie.h"
+
 
 int main()
 {

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Carte :
+class Carte
 {
 private:
 	string m_name;

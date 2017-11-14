@@ -1,22 +1,11 @@
 ﻿  Main.cpp
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(8): error C2059: erreur de syntaxe : '{'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(12): error C2065: 'Carte' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(12): error C2923: 'std::vector' : 'Carte' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(12): error C3203: 'allocator' : la classe modèle non spécialisée ne peut pas être utilisée comme argument modèle pour le paramètre modèle '_Alloc' ; type réel attendu
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(13): error C2065: 'Carte' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(13): error C2923: 'std::stack' : 'Carte' n'est pas un argument de type modèle valide pour le paramètre '_Ty'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(13): error C3203: 'deque' : la classe modèle non spécialisée ne peut pas être utilisée comme argument modèle pour le paramètre modèle '_Container' ; type réel attendu
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(16): error C2061: erreur de syntaxe : identificateur 'Carte'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.h(17): error C2061: erreur de syntaxe : identificateur 'Carte'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(6): error C2065: 'Creature' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(6): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'VIH'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(6): error C3861: 'VIH' : identificateur introuvable
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(9): error C2065: 'Creature' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(9): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'hepatite'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(9): error C3861: 'hepatite' : identificateur introuvable
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(12): error C2065: 'Energie' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(12): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'gene'
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(12): error C3861: 'gene' : identificateur introuvable
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(13): error C2065: 'VIH' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(14): error C2065: 'hepatite' : identificateur non déclaré
-c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\main.cpp(15): error C2065: 'gene' : identificateur non déclaré
+  Joueur.cpp
+c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.cpp(34): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\joueur.cpp(36): error C2039: 'affichage' : n'est pas membre de 'Carte'
+  c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\cartes.h(6): note: voir la déclaration de 'Carte'
+  Energie.cpp
+c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\energie.cpp(8): error C2614: 'Energie' : initialisation de membre non conforme : 'm_nbre_pts' n'est ni une base ni un membre
+c:\users\macbook d'alex\documents\projetcarte\projetcarte\projetcarte\energie.cpp(8): fatal error C1903: impossible de récupérer à partir des erreurs précédentes ; arrêt de la compilation
+  ERREUR INTERNE DU COMPILATEUR dans 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\bin\HostX86\x86\CL.exe'
+      Choisissez la commande Support technique du menu ? (Aide) de Visual C++
+    ou ouvrez le fichier d'aide du Support technique pour plus d'informations

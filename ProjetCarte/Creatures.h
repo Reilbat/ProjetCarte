@@ -1,9 +1,9 @@
 #pragma once
-#include 'Cartes.h'
+#include "Cartes.h"
 
 using namespace std;
 
-class Creatures: public Carte
+class Creature: public Carte
 {
 private:
 	int m_HP; //point de vie

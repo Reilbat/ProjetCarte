@@ -1,16 +1,18 @@
 #pragma once
 #include <vector>
 #include <stack>
+#include "Cartes.h"
 
 using namespace std;
 
-class Joueur :
+class Joueur 
 {
 private:
-	string m_name_Joueur;
+	string m_nom_Joueur;
 	int m_hp_Joueur;
-	vector<Carte>Collection;
-	stack<Carte>Deck;
+	int m_solde;
+	vector<Carte> collection;
+	//stack<Carte>Deck;
 public:
 
 	void ajout_carte(Carte add);

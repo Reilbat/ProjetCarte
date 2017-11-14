@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Cartes.h"
+#include <string>
 
 using namespace std;
 
