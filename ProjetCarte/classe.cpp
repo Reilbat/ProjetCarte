@@ -17,6 +17,6 @@ class Energie : public Carte
     ~Energie();
     int get_type()  const;
     int get_pts()   const;
-    void affichage() const;
+    void affichage() ;
     string type() const;
 };

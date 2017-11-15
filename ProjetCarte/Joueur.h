@@ -18,6 +18,7 @@ public:
 	void ajout_carte(Carte add);
 	void set_coll(Carte add);
 	void affichage_coll();
+	void affichage();
 	Joueur(string _nom, int _solde);
 	~Joueur();
 

@@ -3,8 +3,8 @@
 
 using namespace std;
 
-Energie::Energie(string _nom, string _description, int _type, int _nbre_pts)
-	:m_type(_type), m_nbre_pts(_nbre_pts), Carte(_nom, _description)
+Energie::Energie(string _nom, string _description, int _type, int _point)
+	:m_type(_type), m_point(_point), Carte(_nom, _description)
 {
 
 }
@@ -12,15 +12,15 @@ Energie::~Energie()
 {
 
 }
-int Energie::get_type() const
+int Energie::get_type() 
 {
 	return m_type;
 }
-int Energie::get_pts()  const
+int Energie::get_point()  
 {
-	return m_nbre_pts;
+	return m_point;
 }
-string Energie::type() const
+string Energie::type() 
 {
 	string name_type;
 	if (get_type() == 1) { name_type = "MST"; }
@@ -29,8 +29,8 @@ string Energie::type() const
 	if (get_type() == 4) { name_type = "salive"; }
 	return name_type;
 }
-void Energie::affichage() const
+void Energie::affichage() 
 {
 	Carte::affichage();
-	cout << "ajoute " << get_pts() << " points d'energie " << type() << endl;
+	//cout << "ajoute " << get_point() << " points d'energie " << type() << endl;
 }

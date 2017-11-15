@@ -22,7 +22,7 @@ private:
 		int    m_degat_attaque_2;
 	public:
 		Creature();
-		Creature(string _nom, string _description, int _pv_base, int _etat,
+		Creature(string _nom, string _description, int _HP, int _etat,
 			string _nom_attaque_1, string _description_attaque_1, int _nbe_pt_attaque_1, int _nature_pt_attaque_1, int _degat_attaque_1,
 			string _nom_attaque_2, string _description_attaque_2, int _nbe_pt_attaque_2, int _nature_pt_attaque_2, int _degat_attaque_2);
 		~Creature();

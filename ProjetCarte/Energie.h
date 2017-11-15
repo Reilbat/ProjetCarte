@@ -10,6 +10,11 @@ private:
 
 public:
 	Energie();
-	Energie(string _name,string _description,int _type, int _point);
+	Energie(string _nom,string _description,int _type, int _point);
 	~Energie();
+
+	int get_type();
+	int get_point();
+	void affichage();
+	string type();
 };

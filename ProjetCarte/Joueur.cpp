@@ -31,8 +31,8 @@ void Joueur::ajout_carte(Carte new_carte)
 //FONCTION AFFICHAGE COLLECTION
 void Joueur::affichage_coll()
 {
-	for (int i = 0; i<collection.size(); i++)
+//	for (int i = 0; i<collection.size(); i++)
 	{
-		collection[i].affichage();
+		//collection[i].affichage();
 	}
 }
