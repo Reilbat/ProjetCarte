@@ -1,5 +1,6 @@
 #include "Menu.h"
 #include "Joueur.h"
+#include "bibliotheque.h"
 
 using namespace Rac;
 
@@ -35,13 +36,7 @@ using namespace Rac;
 }*/
 
 
-Creature VIH("VIH", "fleau", 12, 1, 
-	"suppresion de anticorps", "", 5, 1, 3,
-	"sida", "", 5, 1, 8);
-Creature hepatite("hepatite", "", 5, 1,  //nom,description,pv,etat
-	"nausee", "", 5, 1, 2,  //nom,description,cout,type,degat
-	"jaunisse", "", 5, 1, 5);
-Energie gene("facteur genetique", "transmition hereditaire", 3, 15);
+
 
 void nouvelle_collection(Joueur bob) //fonction qui alloue une collection 
 {
@@ -125,11 +120,6 @@ void affiche_creerJoueur() //parametre du Joueur : nom, point de vie,
 	system("PAUSE");
 	magasin(lucas);
 
-
-	//Joueur poto(nomJoueur, solde);
-	//magasin();
-	//poto.affichage_coll();
-
 	//creer joueur avec son nom avec class joueur
 	//ensuite distribution de cartes et création d'un deck aléatoire
 	//pas oublier d'afficher le deck et la collection avant de joueur et dans l'affichage
@@ -140,8 +130,9 @@ int fchoix1(bool confirmation, Joueur jou)
 {	
 	string nomfichier = "test.txt";
 	ofstream monFlux(nomfichier, ios::app);
+	int sold = 0;
 
-	cout << "Vous souhaitez acheter Carte prem's a 500p ; confirmer ?" << endl;
+	cout << "Vous souhaitez acheter Papillomavirus a 500p ; confirmer ?" << endl;
 	cout << "1. OUI " << endl;
 	cout << "2. NON " << endl;
 	cin >> confirmation;
@@ -149,8 +140,11 @@ int fchoix1(bool confirmation, Joueur jou)
 	if (confirmation == true)
 	{
 		cout << "Achat effectue " << endl; //transfert a faire
-		jou.ajout_carte(&hepatite);
-		monFlux << "Hepatite achete";
+		jou.ajout_carte(&papillomavirus);
+		monFlux << "Papillomavirus achete";
+		sold = jou.get_solde();
+		sold = sold - 500;
+		cout << "nouveau solde : "<<  sold << endl;
 		jou.affichage_coll();
 		return(false);
 	}
@@ -163,14 +157,23 @@ int fchoix1(bool confirmation, Joueur jou)
 //VIH
 int fchoix2(bool confirmation, Joueur jou)
 {
-	cout << "Vous souhaitez acheter Carte sec a 800p ; confirmer ?" << endl;
+	string nomfichier = "test.txt";
+	ofstream monFlux(nomfichier, ios::app);
+	int sold = 0;
+
+	cout << "Vous souhaitez acheter Variolle a 800p ; confirmer ?" << endl;
 	cout << " 1. OUI" << endl;
 	cout << " 2. NON" << endl;
 	cin >> confirmation;
 	if (confirmation == true)
 	{
 		cout << "Achat effectue " << endl;
-		//poto.ajout_carte(&VIH);
+		jou.ajout_carte(&variolle);
+		monFlux << "Variolle achete";
+		sold = jou.get_solde();
+		sold = sold - 800;
+		cout << "nouveau solde : " << sold << endl;
+		jou.affichage_coll();
 		return(false);
 	}
 	else
@@ -180,13 +183,24 @@ int fchoix2(bool confirmation, Joueur jou)
 //gene
 int fchoix3(bool confirmation, Joueur jou)
 {
-	cout << "Vous souhaitez acheter Carte  a 700p ; confirmer ?" << endl;
+
+	string nomfichier = "test.txt";
+	ofstream monFlux(nomfichier, ios::app);
+	int sold = 0;
+
+	cout << "Vous souhaitez acheter Grippe a 700p ; confirmer ?" << endl;
 	cout << " 1. OUI" << endl;
 	cout << " 2. NON" << endl;
 	cin >> confirmation;
 	if (confirmation == true)
 	{
 		cout << "OK" << endl;
+		jou.ajout_carte(&grippe);
+		monFlux << "Grippe achete";
+		sold = jou.get_solde();
+		sold = sold - 700;
+		cout << "nouveau solde : " << sold << endl;
+		jou.affichage_coll();
 		return(false);
 	}
 	else
