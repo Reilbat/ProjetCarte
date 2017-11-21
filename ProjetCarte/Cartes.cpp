@@ -1,6 +1,4 @@
-#include <iostream>
 #include "Cartes.h"
-#include <string>
 
 using namespace std;
 
@@ -13,15 +11,17 @@ Carte::Carte() : m_nom(), m_description()
 Carte::~Carte()
 {
 }
-string Carte::get_nom() 
+
+string Carte::get_nom() const
 {
 	return m_nom;
 }
-string Carte::get_description() 
+string Carte::get_description() const
 {
 	return m_description;
 }
-void Carte::affichage() 
+void Carte::affichage()
 {
-	cout << "nom : " << get_nom() << " ; description : " << get_description() << endl;
+	cout << "- nom : " << get_nom() << " ; description : " << get_description() << endl;
 }
+

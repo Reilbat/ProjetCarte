@@ -1,19 +1,23 @@
-#pragma once
-
+#ifndef CARTE_H         //evite les erreurs pour l'inclusion multiples
+#define CARTE_H
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
+
 
 class Carte
 {
 private:
 	string m_nom;
 	string m_description;
-
 public:
-	Carte(); //constructeur par défaut
-	Carte(string _name, string _description); //surchargé 
-	~Carte(); //destructeur
+	Carte(string _nom, string _description);
+	Carte();
 
-	string get_description();
-	string get_nom();
-	void affichage();
+	virtual ~Carte();            // "virtual" : utilisation du polymorphisme
+	string get_nom() const;
+	string get_description() const;
+	virtual void affichage();
 };
+#endif

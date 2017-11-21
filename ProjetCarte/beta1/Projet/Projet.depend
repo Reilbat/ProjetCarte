@@ -34,3 +34,38 @@
 1510770096 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\src\joueur.cpp
 	"Joueur.h"
 
+1510830208 source:c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\main.cpp
+	<iostream>
+	<vector>
+	"Energie.h"
+	"Joueur.h"
+	"Creature.h"
+	"Carte.h"
+
+1510830208 c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\include\energie.h
+	"Carte.h"
+
+1510830208 c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\include\carte.h
+	<iostream>
+	<vector>
+
+1510830208 c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\include\joueur.h
+	"Carte.h"
+	"Creature.h"
+	"Energie.h"
+
+1510830208 c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\include\creature.h
+	"Carte.h"
+
+1510830208 source:c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\src\carte.cpp
+	"Carte.h"
+
+1510830208 source:c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\src\creature.cpp
+	"Creature.h"
+
+1510830208 source:c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\src\energie.cpp
+	"Energie.h"
+
+1510830208 source:c:\users\macbook d'alex\documents\github\projetcarte\projetcarte\beta1\projet\src\joueur.cpp
+	"Joueur.h"
+
