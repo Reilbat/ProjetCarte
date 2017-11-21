@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1511188277 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\main.cpp
+	<iostream>
+	<vector>
+	"Energie.h"
+	"Joueur.h"
+	"Creature.h"
+	"Carte.h"
+
+1510844284 c:\users\lucas\cours\ing2\info\projet info\beta1\projet\include\energie.h
+	"Carte.h"
+	<string>
+
+1510844065 c:\users\lucas\cours\ing2\info\projet info\beta1\projet\include\carte.h
+	<iostream>
+	<vector>
+	<string>
+
+1510930349 c:\users\lucas\cours\ing2\info\projet info\beta1\projet\include\joueur.h
+	"Carte.h"
+	"Creature.h"
+	"Energie.h"
+
+1510844284 c:\users\lucas\cours\ing2\info\projet info\beta1\projet\include\creature.h
+	"Carte.h"
+
+1510844447 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\src\carte.cpp
+	"Carte.h"
+
+1510844284 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\src\creature.cpp
+	"Creature.h"
+
+1510844284 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\src\energie.cpp
+	"Energie.h"
+
+1510930249 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\src\joueur.cpp
+	"Joueur.h"
+
+1510930542 c:\users\lucas\cours\ing2\info\projet info\beta1\projet\include\d_carte.h
+	<vector>
+	"Creature.h"
+	"Energie.h"
+
+1510930542 source:c:\users\lucas\cours\ing2\info\projet info\beta1\projet\src\d_carte.cpp
+	"D_carte.h"
+
