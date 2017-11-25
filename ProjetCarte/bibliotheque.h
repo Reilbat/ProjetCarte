@@ -74,3 +74,6 @@ Creature Meningite("Meningite", "inflammation du systeme nerveux", 3, 0,
 Energie gene("facteur genetique", "transmition hereditaire", 3, 30);//nom,description,type,nbre de point
 Energie sang("facteur sanguin", "contagion par la mise en contact de 2 sang", 3, 20);
 Energie mst("facteur sexuel", "contagion par rapport sexuel", 3, 10);
+
+//Cartes spéciale
+

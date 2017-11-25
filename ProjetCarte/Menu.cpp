@@ -36,70 +36,10 @@ using namespace Rac;
 }*/
 
 
-
-
-void nouvelle_collection(Joueur bob) //fonction qui alloue une collection 
-{
-	//vector<string> collection;
-
-	int collecrand = 0;
-	//srand(time(0));
-	uniform_int_distribution<int> distribution(minimum, maximum);
-	std::default_random_engine generateur;
-	//const auto tirage = 20;
-	//for (auto i = 0; i < tirage; ++i) {
-		collecrand = distribution(generateur);
-		//cout << collecrand << endl;
-	//}
-		string nomfichier = "test.txt";
-		ofstream monFlux(nomfichier.c_str());
-
-	if (collecrand == 1)
-	{
-		bob.ajout_carte(&VIH);
-		monFlux << "VIH Hepatite Gene";
-		bob.ajout_carte(&hepatite);
-		bob.ajout_carte(&VIH);
-		bob.ajout_carte(&gene);
-		bob.affichage_coll();
-		monFlux << endl;
-	}
-	if (collecrand == 2)
-	{
-		bob.ajout_carte(&gene);
-		monFlux << "gene Hepatite VIH gene";
-		bob.ajout_carte(&hepatite);
-		bob.ajout_carte(&VIH);
-		bob.ajout_carte(&gene);
-		bob.affichage_coll();
-		monFlux << endl;
-	}
-	if (collecrand == 3)
-	{
-		bob.ajout_carte(&gene);
-		monFlux << "gene Hepatite VIH VIH";
-		bob.ajout_carte(&hepatite);
-		bob.ajout_carte(&VIH);
-		bob.ajout_carte(&VIH);
-		bob.affichage_coll();
-		monFlux << endl;
-	}
-	/*if (collecrand == 4)
-	{
-		collection.push_back(&VIH);
-		collection.push_back(&gene);
-		collection.push_back(&VIH);
-		//collection.push_back(&VIH);
-		for (int i = 0; i < 4; i++)
-		{
-			cout << collection[i] << endl;
-		}
-	}*/
-}
-
-void affiche_creerJoueur() //parametre du Joueur : nom, point de vie, 
+void affiche_creerJoueur(vector<Joueur> tab_joueur) //parametre du Joueur : nom, point de vie, 
 {
 	int choix(0);
+	int taille(0);
 	system("cls");
 	string nomJoueur;
 	cout << "Creer Joueur" << endl;
@@ -112,13 +52,16 @@ void affiche_creerJoueur() //parametre du Joueur : nom, point de vie,
 	cout << " Votre nom est : " << nomJoueur << endl;
 	cout << "Votre nombre de point de vie est : " << vieJoueur << endl;
 	cout << "Votre solde est : " << solde << endl;
-	Joueur lucas(nomJoueur, solde);
+
+	tab_joueur.push_back(Joueur(nomJoueur, solde));
+	taille = tab_joueur.size();
+
 	system("PAUSE");
 	system("cls");
 	cout << "Un deck vous a ete donne aleatoirement. Vous disposez des cartes suivantes :" << endl;
-	nouvelle_collection(lucas);
+	tab_joueur[taille].nouvelle_collection();
 	system("PAUSE");
-	magasin(lucas);
+	//magasin(tab_joueur[taille]);
 
 	//creer joueur avec son nom avec class joueur
 	//ensuite distribution de cartes et création d'un deck aléatoire
@@ -243,7 +186,7 @@ int magasin(Joueur jou) //permet l'achat de cartes
 	return 0;
 }
 
-int affichage_menu_debut() //affichage des possibilité avec choix : 
+int affichage_menu_debut(vector<Joueur> joueurs) //affichage des possibilité avec choix : 
 {
 	int choix(0);
 
@@ -257,7 +200,7 @@ int affichage_menu_debut() //affichage des possibilité avec choix :
 
 	if (choix == 2)
 	{
-		affiche_creerJoueur();
+		affiche_creerJoueur(joueurs);
 	}
 	
 	//if (choix == 4)

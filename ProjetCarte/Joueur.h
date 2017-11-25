@@ -3,6 +3,8 @@
 #include "Cartes.h"
 #include "Creatures.h"
 #include "Energie.h"
+#include "bibliotheque.h"
+
 
 class Joueur
 {
@@ -20,6 +22,7 @@ public:
 
 	void affichage();
 	void affichage_coll();
+	void nouvelle_collection();
 
 	//accesseur
 	string get_name();

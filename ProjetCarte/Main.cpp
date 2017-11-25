@@ -10,15 +10,17 @@ using namespace Rac;
 
 int main()
 {
-	/*bool jeu=true;
+	
 
 
-	//	nouvelle_collection(Joueur bob);*/
-		affichage_menu_debut();
+	//	nouvelle_collection(Joueur bob);
+
+	vector<Joueur> joueurs;
+
+	affichage_menu_debut(joueurs);
 	
 
 	/*appel aux fonctions pour tester code
-	lucas.ajout_carte(&VIH);
 	lucas.ajout_carte(&gene);*/
 	//lucas.affichage_coll(); 
 
